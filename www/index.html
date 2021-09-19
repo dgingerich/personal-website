@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="favicon icon" href="/assets/favicon.png" type="image/x-icon">
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="scroll-bar.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <!-- home-link, portfolio-link, about-link, and contact-link used to set active link -->
+      <p class="nav-link home-link">home</p>
+      <p class="nav-link portfolio-link">portfolio</p>
+      <p class="nav-link about-link">about</p>
+      <p class="nav-link contact-link">contact</p>
+    </nav>
+  </header>
+
+  <main>
+    <div id="home" class="anchor">
+      <h1 class="title header-title">Hi, my name's Danny.</h1>
+      <h2 class="subtitle">Nice to meet you</h2>
+      <button class="btn portfolio-link">See my projects</button>
+    </div>
+
+    <div id="portfolio" class="anchor">
+      <h1 class="title">Portfolio</h1>
+    </div>
+
+    <div id="about" class="anchor">
+      <h1 class="title about-title">A bit about me...</h1>
+      <div class="split-container">
+        <div class="text-container">
+          <p class="text">I like to build things.</p>
+          <p class="text">When I'm not coding, you can probably find me reading. If I'm doing either, you can probably
+            find me drinking coffee.</p>
+          <p class="text">
+            I'm always eager to learn new languages and technologies, but these are some that I already have experience
+            with.</p>
+        </div>
+        <div class="about-technologies-container">
+          <p class="technology-text" style="color: #FF6633">&#60;HTML&#62;</p>
+          <p class="technology-text" style="color: #3366FF">CSS</p>
+          <p class="technology-text" style="background-color: #FFFF66"> JavaScript { } </p>
+          <div>
+            <p class="technology-text" style="color: #61DAFB">React</p>
+            <img src="assets/react.svg" class="react-img" onerror="this.src='assets/react.png'" alt="React">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="anchor">
+      <h1 class="title">Contact Me</h1>
+      <div class="split-container">
+        <div class="text-container">
+          <p class="text">Want to work together? Get in touch with me here.</p>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" action="https://formsubmit.co/6b9ee52f6e36cfde17d112a919f87b62" method="POST">
+            <input type="email" name="email" class="contact-email" placeholder="Email Address">
+            <textarea type="text" name="message" class="contact-message" placeholder="Message"></textarea>
+            <button class="btn contact-submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span class="material-icons md-48 scroll-up-box home-link" style="font-size: 32px;">keyboard_double_arrow_up</span>
+    <p class="footer-text">Created by yours truly</p>
+  </footer>
+
+</body>
+
+</html>

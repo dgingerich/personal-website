@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+/* || General Styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-title: 'comfortaa', cursive;
+    --font-basic-sans: sans-serif;
+    --font-text: "Roboto", sans-serif; 
+    --font-accent: 'Roboto Condensed', sans-serif;
+
+    --clr-txt: #000;
+    --clr-accent-text: #fff;
+    --clr-bg: #000;
+}
+
+body {
+    margin: 0em;
+    color: var(--clr-txt);
+    line-height: 1.5;
+    text-align: center;
+}
+
+main {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    font-weight: normal;
+    font-family: var(--font-title);
+    font-size: 3em;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: transparent;
+    border-color: var(--clr-bg);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1.125em;
+    padding: .5em;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.subtitle {
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 2.15em;
+    margin-top: 1em;
+}
+
+.split-container {
+    display: inline-block;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 1em;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 1.5em;
+}
+
+/* || Header */
+
+header {
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    align-items: center;
+    top: 0%;
+    z-index: 1000;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--clr-bg);
+}
+
+.nav-link {
+    color: var(--clr-accent-text);
+    text-decoration: none;
+    padding: .25em;
+    font-family: var(--font-accent);
+}
+
+/* Used in JS to set active nav link as underlined */
+.nav-link_active {
+    text-decoration: underline;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* || Home */
+
+#home {
+    height: 100vh;
+    padding-top: 5vh;
+}
+
+.header-title {
+    display: inline-block;
+    margin-bottom: 1em;
+    padding-top: 25vh;
+}
+
+.portfolio-btn {
+    text-decoration: none;
+    color: var(--clr-txt);
+    font-family: var(--font-basic-sans);
+    margin-top: 2.15em;
+}
+
+/* || Portfolio */
+
+#portfolio {
+    height: 50vh;
+    padding-top: 5vh;
+}
+
+/* || About */
+
+#about {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.about-technologies-container {
+    display: inline-block;
+}
+
+.technology-text {
+    font-size: 3em;
+    margin-top: 0em;
+    margin-bottom: 0;
+    font-family: var(--font-text);
+    font-weight: 5;
+    text-align: center;
+    float: center;
+}
+
+.about-technologies-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-img {
+    height: 3em;
+    margin-left: 1em;
+}
+
+/* || Contact */
+
+#contact {
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contact-form-container {
+    width: 100%;
+}
+
+.contact-email {
+    width: 100%;
+    font-size: 1.5em;
+    font-family: var(--font-text);
+    padding-left: .25em;
+}
+
+.contact-message {
+    font-size: 1.5em;
+    width: 100%;
+    height: 20em;
+    margin-top: 1.5em;
+    vertical-align: 0;
+    font-family: var(--font-text);
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.contact-submit-btn {
+    margin-top: 1.5em;
+    float: right;
+}
+
+/* || Footer */
+
+footer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 10vh;
+    background-color: #a9a9a9;
+    margin: 0;
+}
+
+.scroll-up-box {
+    display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    margin-top: -2vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+.scroll-up-box:hover,
+.scroll-up-box:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    color: var(--clr-accent-text);
+    font-family: var(--font-accent);
+}
+
+@media (min-width: 800px) {
+
+    body {
+        margin: 0em;
+    }
+
+    header {
+        margin: 0em 30% 0em 30%;
+    }
+
+    .nav {
+        width: 40%;
+    }
+    
+    .text-container {
+        font-size: 2em;
+    }
+
+    .technology-text {
+        font-size: 6em;
+    }
+
+    .react-img {
+        height: 6em;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    
+    /* || General Styles */
+    
+    .split-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5vh;
+    }
+    
+    .text-container {
+        text-align: left;
+        width: 40%;
+    }
+
+    /* || About */
+
+    .technology-text {
+        text-align: left;
+    }
+
+    .about-technologies-container div { 
+        justify-content: left;
+    }
+
+    /* || Contact */
+
+    #contact .text-container {
+        border-right: solid;
+        padding-right: 2em;
+    }
+
+    .contact-form-container {
+        width: 50%;
+    }
+}
