@@ -142,39 +142,78 @@ header {
 /* || Portfolio */
 
 #portfolio {
-    height: 50vh;
     padding-top: 5vh;
+    
 }
+
+.portfolio-container {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.portfolio-img {
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.portfolio-img:hover, 
+.portfolio-img:focus {
+    cursor: pointer;
+}
+
+.portfolio-skills-div {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.portfolio-skills {
+    columns: 2;
+    column-gap: 30%;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* || About */
 
 #about {
     padding-top: 5vh;
     padding-bottom: 10vh;
-    display: inline-block;
     width: 100%;
     height: auto;
-    text-align: center;
 }
 
 .about-technologies-container {
     display: inline-block;
+    text-align: center;
+}
+
+.about-technologies-container>.technology-text {
+    margin: auto;
 }
 
 .technology-text {
     font-size: 3em;
     margin-top: 0em;
-    margin-bottom: 0;
+    margin-bottom: 0em;
     font-family: var(--font-text);
     font-weight: 5;
-    text-align: center;
-    float: center;
+    width: min-content;
+    white-space: nowrap;
 }
 
 .about-technologies-container div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .react-img {
@@ -266,6 +305,10 @@ footer {
         width: 40%;
     }
     
+    .about-technologies-container {
+        text-align: left;
+    }
+
     .text-container {
         font-size: 2em;
     }
@@ -289,10 +332,10 @@ footer {
         justify-content: space-between;
         margin-top: 5vh;
     }
-    
-    .text-container {
-        text-align: left;
+
+    .split-container>div {
         width: 40%;
+        text-align: left;
     }
 
     /* || About */
@@ -301,9 +344,6 @@ footer {
         text-align: left;
     }
 
-    .about-technologies-container div { 
-        justify-content: left;
-    }
 
     /* || Contact */
 
