@@ -2,7 +2,15 @@ const express = require('express')
 const helmet = require('helmet')
 
 const app = express()
-app.use(helmet())
+
+app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"]
+      }
+    })
+);
+
 const port = 3333
 
 app.use(express.static('www'))
