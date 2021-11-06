@@ -150,6 +150,9 @@ header {
     width: 75%;
     margin-left: 12.5%;
     margin-right: 12.5%;
+    border-bottom: solid;
+    border-width: 1px;
+    padding-bottom: 5vh;
 }
 
 .portfolio-img {
