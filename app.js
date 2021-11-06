@@ -1,24 +1,16 @@
-const express = require('express')
-const helmet = require('helmet')
-const cors = require('cors')
+const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
 
-const app = express()
+const app = express();
 
-app.use(cors())
-app.use(
-    helmet.contentSecurityPolicy({
-        useDefaults: true,
-        directives: {
-            defaultSrc: helmet.contentSecurityPolicy.dangerouslyDisableDefaultSrc,
-        },
-    })
-);
+app.use(helmet());
 
 
-const port = 3000
+const port = 3333;
 
-app.use(express.static('www'))
+app.use(express.static('www'));
 
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`)
+    console.log(`App listening at http://localhost:${port}`);
 })
