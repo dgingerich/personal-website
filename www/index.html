@@ -14,6 +14,7 @@
 <body>
 
   <header>
+    <!--Nav Bar-->
     <nav class="nav">
       <!-- home-link, portfolio-link, about-link, and contact-link used to set active link -->
       <p class="nav-link home-link">home</p>
@@ -24,19 +25,28 @@
   </header>
 
   <main>
+
+    <!--Home-->
     <div id="home" class="anchor">
       <h1 class="title header-title">Hi, my name's Danny.</h1>
       <h2 class="subtitle">Nice to meet you</h2>
       <button class="btn portfolio-link">See my projects</button>
     </div>
 
+    <!--Portfolio-->
     <div id="portfolio" class="anchor">
       <h1 class="title">Portfolio</h1>
+
+      <!--Personal Website-->
       <div class="portfolio-container personal-website text-container">
         <h3 class="portfolio-subtitle">Personal Website</h3>
         <a href="index.html"><img src="assets/personal-website.png" class="portfolio-img" alt="Personal Website"></a>
         <div class="portfolio-description-div">
-          <p class="portfolio-description">This website! I built my portfolio website from scratch and host it on my own virtual private server.</p>
+          <p class="portfolio-description">
+            This website! I built my portfolio website from scratch with HTML, CSS, and Javascript and host it on my own
+            virtual private server. My other applications are also hosted on the VPS. I use Nginx for reverse proxying
+            as well as SSL support.
+          </p>
         </div>
         <div class="portfolio-skills-div">
           <p>Skills Used</p>
@@ -44,14 +54,39 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
+            <li>Nginx</li>
+            <li>CentOS</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Bookstore-->
+      <div class="portfolio-container bookstore text-container">
+        <h3 class="portfolio-subtitle">Novel Bookstore</h3>
+        <a href="/bookstore/"><img src="assets/bookstore.png" class="portfolio-img" alt="Novel Bookstore"></a>
+        <div class="portfolio-description-div">
+          <p class="portfolio-description">
+            This is a mock online bookstore. Visitors can browse the selection of books by genre and view details about each book. As I continue to work on the bookstore, 
+            it serves as a tool to learn about React, along with related technologies - including Redux and the MERN stack, amongst others. 
+          </p>
+        </div>
+        <div class="portfolio-skills-div">
+          <p>Skills Used</p>
+          <ul class="portfolio-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Redux</li>
             <li>Node.js</li>
             <li>Express</li>
-            <li>CentOS</li>
+            <li>MongoDB</li>
           </ul>
         </div>
       </div>
     </div>
 
+    <!--About-->
     <div id="about" class="anchor">
       <h1 class="title about-title">A bit about me...</h1>
       <div class="split-container">
@@ -60,7 +95,8 @@
           <p>When I'm not coding, you can probably find me reading. If I'm doing either, you can probably
             find me drinking coffee.</p>
           <p>
-            I'm always eager to learn new languages and technologies, but these are some that I already have experience
+            I'm always eager to learn new languages and technologies, but these are some that I already have
+            experience
             with.</p>
         </div>
         <div class="about-technologies-container">
@@ -75,6 +111,7 @@
       </div>
     </div>
 
+    <!--Contact-->
     <div id="contact" class="anchor">
       <h1 class="title">Contact Me</h1>
       <div class="split-container">
@@ -92,6 +129,7 @@
     </div>
   </main>
 
+  <!--Footer-->
   <footer>
     <span class="material-icons md-48 scroll-up-box home-link" style="font-size: 32px;">keyboard_double_arrow_up</span>
     <p class="footer-text">Created by yours truly</p>
