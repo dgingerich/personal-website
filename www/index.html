@@ -38,101 +38,97 @@
       <h1 class="title">Portfolio</h1>
 
       <!--Personal Website-->
-      <div class="portfolio-container personal-website text-container">
-        <a href="index.html" class="portfolio-subtitle">Personal Website</a>
-        <div class="portfolio-image-container">
+      <div class="portfolio-container text-container">
+
+        <div class="portfolio-left-div">
+          <a href="index.html" class="portfolio-subtitle">Personal Website</a>
           <a href="index.html"><img src="assets/personal-website.png" class="portfolio-img" alt="Personal Website"></a>
         </div>
-        <div class="portfolio-description-div">
+
+        <div class="portfolio-right-div">
           <p class="portfolio-description">
-            This website! I built my portfolio website from scratch with HTML, CSS, and Javascript and host it on my own
-            virtual private server. My other applications are also hosted on the VPS. I use Nginx for reverse proxying
+            This website! I built my portfolio website from scratch with HTML, CSS, and Javascript and host it on my
+            own virtual private server. My other applications are also hosted on the VPS. I use Nginx for reverse
+            proxying
             as well as SSL support.
           </p>
-        </div>
-        <div class="portfolio-skills-div">
-          <p>Skills Used</p>
-          <ul class="portfolio-skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Nginx</li>
-            <li>CentOS</li>
-          </ul>
+          <p>Technologies: HTML, CSS, JavaScript, Nginx, CentOS</p>
         </div>
       </div>
 
       <!--Bookstore-->
-      <div class="portfolio-container bookstore text-container">
-        <a href="/bookstore" class="portfolio-subtitle">Novel Bookstore</a>
-        <div class="portfolio-image-container">
+      <div class="portfolio-container text-container">
+
+        <div class="portfolio-left-div">
+          <a href="/bookstore" class="portfolio-subtitle">Novel Bookstore</a>
           <a href="/bookstore"><img src="assets/bookstore.png" class="portfolio-img" alt="Novel Bookstore"></a>
         </div>
-        <div class="portfolio-description-div">
+
+        <div class="portfolio-right-div">
           <p class="portfolio-description">
-            This is a mock online bookstore. Visitors can browse the selection of books by genre and view details about
-            each book. As I continue to work on the bookstore,
-            it serves as a tool to learn about React, along with related technologies - including Redux and the MERN
-            stack, amongst others.
+            A mock bookstore website. I used this project as an introduction to the MERN stack and how the different technologies are wired together. Also implemented Redux for the first time. Hosted on dannygingerich.com and GitHub.
           </p>
-        </div>
-        <div class="portfolio-skills-div">
-          <p>Skills Used</p>
-          <ul class="portfolio-skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-          </ul>
+          <p>Technologies: HTML, CSS, JavaScript, React, Redux, Node.js, Express, MongoDB</p>
         </div>
       </div>
-    </div>
 
-    <!--About-->
-    <div id="about" class="anchor">
-      <h1 class="title about-title">A bit about me...</h1>
-      <div class="split-container">
-        <div class="text-container">
-          <p>I like to build things.</p>
-          <p>When I'm not coding, you can probably find me reading. If I'm doing either, you can probably
-            find me drinking coffee.</p>
-          <p>
-            I'm always eager to learn new languages and technologies, but these are some that I already have
-            experience
-            with.</p>
+      <!--Chess-->
+      <div class="portfolio-container text-container">
+
+        <div class="portfolio-left-div">
+          <a href="/chess" class="portfolio-subtitle">Chess</a>
+          <a href="/chess"><img src="assets/chess.png" class="portfolio-img" alt="Chess"></a>
         </div>
-        <div class="about-technologies-container">
-          <p class="technology-text" style="color: #FF6633">&#60;HTML&#62;</p>
-          <p class="technology-text" style="color: #3366FF">CSS</p>
-          <p class="technology-text" style="background-color: #FFFF66"> JavaScript { } </p>
-          <div>
-            <p class="technology-text" style="color: #61DAFB">React</p>
-            <img src="assets/react.svg" class="react-img" onerror="this.src='assets/react.png'" alt="React">
+
+        <div class="portfolio-right-div">
+          <p class="portfolio-description">
+            Created a two-player chess game. Focus was on implementing the Factory design pattern.
+          </p>
+          <p>Technologies: HTML, CSS, JavaScript, React</p>
+        </div>
+      </div>
+
+      <!--About-->
+      <div id="about" class="anchor">
+        <h1 class="title about-title">A bit about me...</h1>
+        <div class="split-container">
+          <div class="text-container">
+            <p>I like to build things.</p>
+            <p>When I'm not coding, you can probably find me reading. If I'm doing either, you can probably
+              find me drinking coffee.</p>
+            <p>
+              I'm always eager to learn new languages and technologies, but these are some that I already have
+              experience
+              with.</p>
+          </div>
+          <div class="about-technologies-container">
+            <p class="technology-text" style="color: #FF6633">&#60;HTML&#62;</p>
+            <p class="technology-text" style="color: #3366FF">CSS</p>
+            <p class="technology-text" style="background-color: #FFFF66"> JavaScript { } </p>
+            <div>
+              <p class="technology-text" style="color: #61DAFB">React</p>
+              <img src="assets/react.svg" class="react-img" onerror="this.src='assets/react.png'" alt="React">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--Contact-->
-    <div id="contact" class="anchor">
-      <h1 class="title">Contact Me</h1>
-      <div class="split-container">
-        <div class="text-container">
-          <p class="text">Want to work together? Get in touch with me here.</p>
-        </div>
-        <div class="contact-form-container">
-          <form class="contact-form" action="https://formsubmit.co/6b9ee52f6e36cfde17d112a919f87b62" method="POST">
-            <input type="email" name="email" class="contact-email" placeholder="Email Address">
-            <textarea type="text" name="message" class="contact-message" placeholder="Message"></textarea>
-            <button class="btn contact-submit-btn" type="submit">Submit</button>
-          </form>
+      <!--Contact-->
+      <div id="contact" class="anchor">
+        <h1 class="title">Contact Me</h1>
+        <div class="split-container">
+          <div class="text-container">
+            <p class="text">Want to work together? Get in touch with me here.</p>
+          </div>
+          <div class="contact-form-container">
+            <form class="contact-form" action="https://formsubmit.co/6b9ee52f6e36cfde17d112a919f87b62" method="POST">
+              <input type="email" name="email" class="contact-email" placeholder="Email Address">
+              <textarea type="text" name="message" class="contact-message" placeholder="Message"></textarea>
+              <button class="btn contact-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
   </main>
 
   <!--Footer-->
