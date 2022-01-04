@@ -1,10 +1,10 @@
 {
      apps : [
           {
-               name : "app.js",
+               name : "personal-website.js",
                interpreter: "none",
                script: "npx",
-               args: "serve -s build -l 3333"
+               args: "node app.js"
           }
     ]
 }
